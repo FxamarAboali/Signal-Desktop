@@ -18,6 +18,7 @@ export const STORAGE_UI_KEYS: ReadonlyArray<keyof StorageAccessType> = [
   'call-system-notification',
   'customColors',
   'defaultConversationColor',
+  'enter-key-sends',
   'existingOnboardingStoryMessageIds',
   'formattingWarningShown',
   'hasCompletedSafetyNumberOnboarding',

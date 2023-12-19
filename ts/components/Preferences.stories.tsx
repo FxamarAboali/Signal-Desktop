@@ -82,6 +82,7 @@ export default {
     hasCallRingtoneNotification: false,
     hasCountMutedConversations: false,
     hasCustomTitleBar: true,
+    hasEnterKeySends: true,
     hasHideMenuBar: false,
     hasIncomingCallNotifications: true,
     hasLinkPreviews: true,

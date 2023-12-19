@@ -80,6 +80,7 @@ export type PropsDataType = {
   hasCallNotifications: boolean;
   hasCallRingtoneNotification: boolean;
   hasCountMutedConversations: boolean;
+  hasEnterKeySends: boolean;
   hasHideMenuBar?: boolean;
   hasIncomingCallNotifications: boolean;
   hasLinkPreviews: boolean;
@@ -164,6 +165,7 @@ type PropsFunctionType = {
   onCallNotificationsChange: CheckboxChangeHandlerType;
   onCallRingtoneNotificationChange: CheckboxChangeHandlerType;
   onCountMutedConversationsChange: CheckboxChangeHandlerType;
+  onEnterKeySendsChange: CheckboxChangeHandlerType;
   onHasStoriesDisabledChanged: SelectChangeHandlerType<boolean>;
   onHideMenuBarChange: CheckboxChangeHandlerType;
   onIncomingCallNotificationsChange: CheckboxChangeHandlerType;
@@ -262,6 +264,7 @@ export function Preferences({
   hasCallNotifications,
   hasCallRingtoneNotification,
   hasCountMutedConversations,
+  hasEnterKeySends,
   hasHideMenuBar,
   hasIncomingCallNotifications,
   hasLinkPreviews,
@@ -298,6 +301,7 @@ export function Preferences({
   onCallNotificationsChange,
   onCallRingtoneNotificationChange,
   onCountMutedConversationsChange,
+  onEnterKeySendsChange,
   onHasStoriesDisabledChanged,
   onHideMenuBarChange,
   onIncomingCallNotificationsChange,
@@ -874,6 +878,16 @@ export function Preferences({
                 value={sentMediaQualitySetting}
               />
             }
+          />
+        </SettingsRow>
+        <SettingsRow title={i18n('Preferences__keyboard')}>
+          <Checkbox
+            checked={hasEnterKeySends}
+            description={i18n('Preferences__enter-key-sends--description')}
+            label={i18n('Preferences__enter-key-sends--title')}
+            moduleClassName="Preferences__checkbox"
+            name="enterKeySends"
+            onChange={onEnterKeySendsChange}
           />
         </SettingsRow>
         {isSyncSupported && (

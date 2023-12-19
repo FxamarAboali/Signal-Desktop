@@ -54,6 +54,7 @@ export type StorageAccessType = {
   'blocked-uuids': ReadonlyArray<ServiceIdString>;
   'call-ringtone-notification': boolean;
   'call-system-notification': boolean;
+  'enter-key-sends': boolean;
   'hide-menu-bar': boolean;
   'incoming-call-notification': boolean;
   localeOverride: string | null;

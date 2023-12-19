@@ -5723,6 +5723,14 @@
     "messageformat": "To change this setting, open the Signal app on your mobile device and navigate to Settings > Chats",
     "description": "Description for the generate link previews setting"
   },
+  "icu:Preferences__enter-key-sends--title": {
+    "messageformat": "Enter key sends",
+    "description": "Title for the enter key sends setting"
+  },
+  "icu:Preferences__enter-key-sends--description": {
+    "messageformat": "Requires restart to take effect",
+    "description": "Description for the enter key sends setting"
+  },
   "icu:Preferences--advanced": {
     "messageformat": "Advanced",
     "description": "Title for advanced settings"
@@ -5830,6 +5838,10 @@
   "icu:Preferences__devices": {
     "messageformat": "Devices",
     "description": "Label for Device list in call settings pane"
+  },
+  "icu:Preferences__keyboard": {
+    "messageformat": "Keyboard",
+    "description": "Label for keyboard list in chat settings pane"
   },
   "icu:Preferences__turn-stories-on": {
     "messageformat": "Turn on stories",
